@@ -26,6 +26,9 @@ interface RunDAO {
     @Query("SELECT  SUM(timestamp) FROM running_table")
     fun getTotalTimeInMillis(): LiveData<List<Run>>
 
+    @Query("SELECT  SUM(caloriesBurned) FROM running_table")
+    fun getTotalCaloriesBurned(): LiveData<List<Run>>
+
 
 
 }
