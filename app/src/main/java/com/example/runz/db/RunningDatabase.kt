@@ -8,8 +8,9 @@ import androidx.room.TypeConverters
     entities = [Run::class],
     version = 1
 )
+
+@TypeConverters(Converters::class)
 abstract class RunningDatabase: RoomDatabase(){
 
-    @TypeConverters(Converters::class)
     abstract fun getRunDao(): RunDAO
 }

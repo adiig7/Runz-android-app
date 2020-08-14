@@ -3,6 +3,7 @@ package com.example.runz.db
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.room.TypeConverter
+import androidx.room.TypeConverters
 import java.io.ByteArrayOutputStream
 
 class Converters{
